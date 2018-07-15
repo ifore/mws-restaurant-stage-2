@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+  <link rel="preload" as="style" href="dist/css/styles.min.css" onload="this.rel='stylesheet'">
+  <link rel="manifest" href="manifest.json" />
+
+  <title>Restaurant Info</title>
+
+</head>
+
+<body class="inside">
+  <!-- Beginning header -->
+  <header>
+    <!-- Beginning nav -->
+    <h1><a href="/" title="View home page">Restaurant Reviews</a></h1>
+    <!-- Beginning breadcrumb -->
+    <nav aria-label="Breadcrumb">
+      <ul id="breadcrumb" role="navigation">
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+    <!-- End breadcrumb -->
+    <!-- End nav -->
+  </header>
+
+  <!-- End header -->
+
+  <!-- Beginning main -->
+  <main id="maincontent">
+    <!-- Beginning map -->
+    <section id="map-container">
+      <div id="map" role="application" aria-label="Google Maps" aria-hidden="true" tabindex="-1"></div>
+    </section>
+    <!-- End map -->
+    <!-- Beginning restaurant -->
+    <section id="restaurant-container">
+      <h1 id="restaurant-name" aria-label="restaurant name" tabindex="0"></h1>
+      <img id="restaurant-img">
+      <p id="restaurant-cuisine" aria-label="restaurant cousing type"></p>
+      <p id="restaurant-address" aria-label="restaurant address"></p>
+      <table id="restaurant-hours" aria-label="restaurant working hours"></table>
+    </section>
+    <!-- end restaurant -->
+    <!-- Beginning reviews -->
+    <section id="reviews-container">
+      <ul id="reviews-list"></ul>
+    </section>
+    <!-- End reviews -->
+  </main>
+  <!-- End main -->
+
+  <!-- Beginning footer -->
+  <footer id="footer">
+    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+  <!-- End footer -->
+
+  <!-- Beginning scripts -->
+  <!-- Database helpers -->
+  <script type="application/javascript" charset="utf-8" src="dist/js/idb.min.js"></script>
+  <script type="application/javascript" charset="utf-8" src="dist/js/init.min.js"></script>
+  <script type="application/javascript" charset="utf-8" src="dist/js/dbhelper.min.js"></script>
+  <!-- Main javascript file -->
+  <script type="text/javascript" src="dist/js/restaurant_info.min.js"></script>
+  <!-- Google Maps -->
+  <script async defer type="application/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC32BslpUZzuiDJ0-oFpM1FSLEttyBtHds&libraries=places&callback=initMap"></script>
+  <!-- End scripts -->
+
+</body>
+
+</html>
