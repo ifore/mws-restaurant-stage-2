@@ -1,8 +1,8 @@
 let restaurants,
   neighborhoods,
   cuisines
-let map
-let markers = []
+var map
+var markers = []
 
 
 if ('serviceWorker' in navigator) {
